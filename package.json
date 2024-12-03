@@ -1,0 +1,27 @@
+{
+  "name": "standard",
+  "description": "An accessible color scheme inspired by GOV.UK colors. Built to be clear, consistent, and something you can stick with long-term.",
+  "author": "Fausto Núñez Alberro <fausto.nunez@mailbox.org>",
+  "license": "MIT",
+  "homepage": "https://github.com/fnune/standard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnune/standard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fnune/standard/issues"
+  },
+  "scripts": {
+    "lint:lua": "luacheck .",
+    "lint:biome": "biome check",
+    "lint": "yarn lint:biome && yarn lint:lua",
+    "prepare": "husky",
+    "format:lua": "stylua .",
+    "format:biome": "biome format .",
+    "format": "yarn format:biome && yarn format:lua"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "dependencies": {}
+}
