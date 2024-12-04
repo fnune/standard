@@ -1,6 +1,6 @@
 local M = {}
 
-M.tokens = {
+local T = {
   red = "#d4351c",
   yellow = "#ffdd00",
   green = "#00703c",
@@ -23,33 +23,38 @@ M.tokens = {
   turquoise = "#28a197",
 }
 
+M.tokens = T
+
 M.colors = {
   dark = {
-    background = M.tokens.black,
-    foreground = M.tokens.light_grey,
-    cursor = M.tokens.blue,
-    selection = M.tokens.dark_blue,
-    accent = M.tokens.turquoise,
-    border = M.tokens.mid_grey,
-    error = M.tokens.red,
-    warning = M.tokens.orange,
-    info = M.tokens.light_blue,
-    success = M.tokens.green,
-    hint = M.tokens.purple,
+    interface = {
+      background = T.black,
+      foreground = T.light_grey,
+      cursor = T.blue,
+      selection = T.dark_grey,
+      border = T.mid_grey,
+    },
+    intent = {
+      error = T.red,
+      warning = T.orange,
+      info = T.light_blue,
+      success = T.green,
+      hint = T.blue,
+    },
+    syntax = {
+      comment = T.dark_grey,
+      constant = T.light_blue,
+      builtin = T.blue,
+      string = T.light_green,
+      number = T.turquoise,
+      boolean = T.light_purple,
+      func = T.light_grey,
+      variable = T.light_grey,
+      keyword = T.pink,
+      type = T.turquoise,
+    },
   },
-  light = {
-    background = M.tokens.white,
-    foreground = M.tokens.black,
-    cursor = M.tokens.blue,
-    selection = M.tokens.light_blue,
-    accent = M.tokens.turquoise,
-    border = M.tokens.mid_grey,
-    error = M.tokens.red,
-    warning = M.tokens.orange,
-    info = M.tokens.dark_blue,
-    success = M.tokens.green,
-    hint = M.tokens.purple,
-  },
+  light = {},
 }
 
 return M
