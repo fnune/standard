@@ -11,10 +11,10 @@ M.set = function(colors, _opts)
   highlight("CursorLine", { bg = colors.interface.selection })
   highlight("CursorColumn", { fg = "NONE", bg = colors.interface.selection })
   highlight("Directory", { fg = colors.syntax.info, bg = "NONE" })
-  highlight("DiffAdd", { fg = "NONE", bg = colors.intent.success })
-  highlight("DiffChange", { fg = "NONE", bg = colors.interface.warning })
-  highlight("DiffDelete", { fg = "NONE", bg = colors.interface.error })
-  highlight("DiffText", { fg = "NONE", bg = colors.interface.error })
+  highlight("DiffAdd", { fg = "NONE", bg = colors.diff.add.bg })
+  highlight("DiffChange", { fg = "NONE", bg = colors.diff.modify.bg })
+  highlight("DiffDelete", { fg = "NONE", bg = colors.diff.delete.bg })
+  highlight("DiffText", { fg = "NONE", bg = colors.diff.delete.bg })
   highlight("EndOfBuffer", { fg = colors.background, bg = "NONE" })
   highlight("ErrorMsg", { fg = colors.interface.error, bg = colors.background })
   highlight("VertSplit", { fg = colors.interface.border })
@@ -202,6 +202,26 @@ M.set = function(colors, _opts)
 
   -- visual-whitespace.nvim
   highlight("VisualNonText", { fg = colors.syntax.comment, bg = colors.interface.selection })
+
+  -- NeogitOrg/neogit
+  highlight("NeogitWinSeparator", { link = "WinSeparator" })
+  highlight("NeogitDiffAdd", colors.diff.add)
+  highlight("NeogitDiffAddHighlight", colors.diff.add_highlight)
+  highlight("NeogitDiffContext", { fg = colors.foreground, bg = colors.background })
+  highlight("NeogitDiffContextHighlight", { fg = colors.foreground, bg = colors.interface.selection })
+  highlight("NeogitDiffDelete", colors.diff.delete)
+  highlight("NeogitDiffDeleteHighlight", colors.diff.delete_highlight)
+  highlight("NeogitDiffHeader", { bg = colors.background })
+  highlight("NeogitDiffHeaderHighlight", { link = "NeogitDiffHeader" })
+  highlight("NeogitHunkHeader", colors.diff.modify)
+  highlight("NeogitHunkHeaderHighlight", colors.diff.modify_highlight)
+  highlight("NeogitCursorLine", { bg = colors.background })
+  -- Cursor line highlights cause way too much distraction; rely on the
+  -- pointer and regular highlight colors:
+  highlight("NeogitDiffAddCursor", { link = "NeogitDiffAddHighlight" })
+  highlight("NeogitDiffContextCursor", { link = "NeogitDiffContextHighlight" })
+  highlight("NeogitDiffDeleteCursor", { link = "NeogitDiffDeleteHighlight" })
+  highlight("NeogitHunkHeaderCursor", { link = "NeogitHunkHeaderHighlight" })
 end
 
 return M
