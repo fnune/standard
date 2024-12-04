@@ -1,6 +1,6 @@
 local M = {}
 
-local T = {
+local accessible = {
   red = "#d4351c",
   yellow = "#ffdd00",
   green = "#00703c",
@@ -23,35 +23,39 @@ local T = {
   turquoise = "#28a197",
 }
 
-M.tokens = T
+local lowcontrast = {
+  darker_grey = "#2a2c2e",
+}
+
+M.tokens = { accessible = accessible, lowcontrast = lowcontrast }
 
 M.colors = {
   dark = {
+    background = accessible.black,
+    foreground = accessible.light_grey,
     interface = {
-      background = T.black,
-      foreground = T.light_grey,
-      cursor = T.blue,
-      selection = T.dark_grey,
-      border = T.mid_grey,
+      cursor = accessible.blue,
+      selection = lowcontrast.darker_grey,
+      border = lowcontrast.darker_grey,
     },
     intent = {
-      error = T.red,
-      warning = T.orange,
-      info = T.light_blue,
-      success = T.green,
-      hint = T.blue,
+      error = accessible.red,
+      warning = accessible.orange,
+      info = accessible.light_blue,
+      success = accessible.green,
+      hint = accessible.blue,
     },
     syntax = {
-      comment = T.dark_grey,
-      constant = T.light_blue,
-      builtin = T.blue,
-      string = T.light_green,
-      number = T.turquoise,
-      boolean = T.light_purple,
-      func = T.light_grey,
-      variable = T.light_grey,
-      keyword = T.pink,
-      type = T.turquoise,
+      comment = accessible.dark_grey,
+      constant = accessible.light_blue,
+      builtin = accessible.blue,
+      string = accessible.light_green,
+      number = accessible.turquoise,
+      boolean = accessible.light_purple,
+      func = accessible.light_grey,
+      variable = accessible.light_grey,
+      keyword = accessible.pink,
+      type = accessible.turquoise,
     },
   },
   light = {},
