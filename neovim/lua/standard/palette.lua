@@ -42,10 +42,12 @@ M.colors = {
     background = accessible.black,
     foreground = accessible.light_grey,
     interface = {
-      cursor = accessible.blue,
-      selection = lowcontrast.darker_grey,
       border = lowcontrast.darker_grey,
+      current = accessible.brown,
+      cursor = accessible.blue,
       match = accessible.light_blue,
+      reselection = lowcontrast.darker_yellow,
+      selection = lowcontrast.darker_grey,
     },
     intent = {
       disabled = accessible.dark_grey,
