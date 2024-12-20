@@ -48,10 +48,11 @@ M.colors = {
     },
     intent = {
       error = accessible.red,
-      warning = accessible.orange,
-      info = accessible.light_blue,
-      success = accessible.green,
       hint = accessible.blue,
+      info = accessible.light_blue,
+      progress = accessible.yellow,
+      success = accessible.green,
+      warning = accessible.orange,
     },
     diff = {
       add = { fg = accessible.light_green, bg = lowcontrast.darker_green },

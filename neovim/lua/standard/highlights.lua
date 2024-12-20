@@ -222,6 +222,23 @@ M.set = function(colors, _opts)
   highlight("NeogitDiffContextCursor", { link = "NeogitDiffContextHighlight" })
   highlight("NeogitDiffDeleteCursor", { link = "NeogitDiffDeleteHighlight" })
   highlight("NeogitHunkHeaderCursor", { link = "NeogitHunkHeaderHighlight" })
+
+  -- Neotest
+  highlight("NeotestAdapterName", { fg = colors.foreground, bold = true })
+  highlight("NeotestDir", { fg = colors.intent.info })
+  highlight("NeotestExpandMarker", { fg = colors.interface.border })
+  highlight("NeotestFailed", { fg = colors.intent.error })
+  highlight("NeotestFile", { fg = colors.intent.info })
+  highlight("NeotestFocused", { bold = true })
+  highlight("NeotestIndent", { fg = colors.interface.border })
+  highlight("NeotestMarked", { fg = colors.intent.progress, bold = true })
+  highlight("NeotestNamespace", { fg = colors.syntax.keyword })
+  highlight("NeotestPassed", { fg = colors.intent.success })
+  highlight("NeotestRunning", { fg = colors.intent.progress })
+  highlight("NeotestSkipped", { fg = colors.intent.info })
+  highlight("NeotestTarget", { fg = colors.intent.hint })
+  highlight("NeotestWatching", { fg = colors.intent.progress })
+  highlight("NeotestWinSelect", { fg = colors.intent.info, bold = true })
 end
 
 return M
