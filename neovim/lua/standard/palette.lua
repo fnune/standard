@@ -47,11 +47,12 @@ M.colors = {
       border = lowcontrast.darker_grey,
     },
     intent = {
+      disabled = accessible.dark_grey,
       error = accessible.red,
       hint = accessible.blue,
       info = accessible.light_blue,
       progress = accessible.yellow,
-      success = accessible.green,
+      success = accessible.light_green,
       warning = accessible.orange,
     },
     diff = {
