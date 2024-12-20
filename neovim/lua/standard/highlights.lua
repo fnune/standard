@@ -285,6 +285,11 @@ M.set = function(colors, _opts)
   highlight("TelescopeMultiSelection", { link = "CursorLine" })
   highlight("TelescopeMatching", { fg = colors.interface.match })
   highlight("TelescopePromptPrefix", { link = "Normal" })
+
+  -- Illuminate
+  highlight("IlluminatedWordText", { link = "Visual" })
+  highlight("IlluminatedWordRead", { link = "IlluminatedWordText" })
+  highlight("IlluminatedWordWrite", { link = "IlluminatedWordText" })
 end
 
 return M
