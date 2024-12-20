@@ -46,6 +46,7 @@ M.colors = {
       current = accessible.brown,
       cursor = accessible.blue,
       match = accessible.light_blue,
+      reborder = accessible.dark_grey,
       reselection = lowcontrast.darker_yellow,
       selection = lowcontrast.darker_grey,
     },
