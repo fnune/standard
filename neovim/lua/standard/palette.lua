@@ -26,11 +26,11 @@ local accessible = {
 }
 
 local lowcontrast = {
-  dark_red = "#5a2d2a",
+  dark_red = "#6a3532",
   darker_red = "#452f2f",
-  dark_green = "#0f5a3c",
+  dark_green = "#1a6a46",
   darker_green = "#1f4531",
-  dark_yellow = "#5a4a22",
+  dark_yellow = "#6a5a2a",
   darker_yellow = "#4a4426",
   darker_grey = "#2a2c2e",
 }
