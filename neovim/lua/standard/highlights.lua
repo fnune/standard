@@ -182,7 +182,7 @@ M.set = function(colors, _opts)
   highlight("@decorator", { link = "Identifier" })
 
   -- LSP diagnostics
-  highlight("DiagnosticOk", { fg = colors.syntax.success, bg = "NONE" })
+  highlight("DiagnosticOk", { fg = colors.intent.success, bg = "NONE" })
   highlight("DiagnosticError", { fg = colors.intent.error, bg = "NONE" })
   highlight("DiagnosticWarn", { fg = colors.intent.warning, bg = "NONE" })
   highlight("DiagnosticInfo", { fg = colors.intent.hint, bg = "NONE" })
@@ -202,7 +202,8 @@ M.set = function(colors, _opts)
   highlight("VisualNonText", { fg = colors.syntax.comment, bg = colors.interface.selection })
 
   -- NeogitOrg/neogit
-  highlight("NeogitWinSeparator", { link = "WinSeparator" })
+  highlight("NeogitActiveItem", { link = "CursorLine" })
+  highlight("NeogitCursorLine", { bg = colors.background })
   highlight("NeogitDiffAdd", colors.diff.add)
   highlight("NeogitDiffAddHighlight", colors.diff.add_highlight)
   highlight("NeogitDiffContext", { fg = colors.foreground, bg = colors.background })
@@ -213,7 +214,7 @@ M.set = function(colors, _opts)
   highlight("NeogitDiffHeaderHighlight", { link = "NeogitDiffHeader" })
   highlight("NeogitHunkHeader", colors.diff.modify)
   highlight("NeogitHunkHeaderHighlight", colors.diff.modify_highlight)
-  highlight("NeogitCursorLine", { bg = colors.background })
+  highlight("NeogitWinSeparator", { link = "WinSeparator" })
   -- Cursor line highlights cause way too much distraction; rely on the
   -- pointer and regular highlight colors:
   highlight("NeogitDiffAddCursor", { link = "NeogitDiffAddHighlight" })
