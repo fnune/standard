@@ -290,6 +290,30 @@ M.set = function(colors, _opts)
   highlight("IlluminatedWordText", { link = "Visual" })
   highlight("IlluminatedWordRead", { link = "IlluminatedWordText" })
   highlight("IlluminatedWordWrite", { link = "IlluminatedWordText" })
+
+  -- NvimTree
+  highlight("NvimTreeCursorLine", { link = "CursorLine" })
+  highlight("NvimTreeEmptyFolderName", { fg = colors.intent.disabled, bg = "NONE" })
+  highlight("NvimTreeEndOfBuffer", { link = "EndOfBuffer" })
+  highlight("NvimTreeFolderIcon", { fg = colors.intent.info, bg = "NONE" })
+  highlight("NvimTreeFolderName", { fg = colors.foreground, bg = "NONE" })
+  highlight("NvimTreeGitDeleted", { fg = colors.diff.delete.fg, bg = "NONE" })
+  highlight("NvimTreeGitDirty", { fg = colors.diff.modify.fg, bg = "NONE" })
+  highlight("NvimTreeGitIgnored", { fg = colors.intent.disabled, bg = "NONE" })
+  highlight("NvimTreeGitMerge", { fg = colors.diff.modify.fg, bg = "NONE" })
+  highlight("NvimTreeGitNew", { fg = colors.diff.add.fg, bg = "NONE" })
+  highlight("NvimTreeGitRenamed", { fg = colors.diff.modify.fg, bg = "NONE" })
+  highlight("NvimTreeGitStaged", { fg = colors.diff.add_highlight.fg, bg = "NONE" })
+  highlight("NvimTreeImageFile", { fg = colors.syntax.tag, bg = "NONE" })
+  highlight("NvimTreeIndentMarker", { fg = colors.intent.disabled, bg = "NONE" })
+  highlight("NvimTreeNormal", { link = "Normal" })
+  highlight("NvimTreeOpenedFolderName", { link = "NvimTreeFolderName" })
+  highlight("NvimTreeRootFolder", { fg = colors.foreground, bg = "NONE", bold = true })
+  highlight("NvimTreeSpecialFile", { fg = colors.syntax.builtin, bg = "NONE", underline = true })
+  highlight("NvimTreeVertSplit", { link = "VertSplit" })
+
+  -- Dropbar
+  highlight("DropBarIconKindFolder", { link = "NvimTreeFolderIcon" })
 end
 
 return M
