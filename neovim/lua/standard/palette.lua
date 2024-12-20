@@ -35,7 +35,7 @@ local lowcontrast = {
   darker_grey = "#2a2c2e",
 }
 
-M.tokens = { accessible = accessible, lowcontrast = lowcontrast }
+M.tokens = vim.tbl_deep_extend("force", lowcontrast, accessible)
 
 M.colors = {
   dark = {
