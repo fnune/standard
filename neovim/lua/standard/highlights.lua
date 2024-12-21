@@ -135,19 +135,22 @@ M.set = function(colors, _opts)
   highlight("@type.qualifier", { fg = colors.syntax.tag, bg = "NONE" })
   highlight("@variable", { fg = colors.syntax.variable, bg = "NONE" })
 
-  -- Treesitter for TSX
-  highlight("@lsp.typemod.variable.readonly.typescriptreact", { link = "@variable" })
-
-  -- Treesitter for markup, including HTML and Markdown
+  -- Treesitter for markup
   highlight("@markup.heading", { fg = colors.markup.heading, bg = "NONE", bold = true })
   highlight("@markup.italic", { fg = "NONE", bg = "NONE", italic = true })
-  highlight("@markup.link.label", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
-  highlight("@markup.link.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
+  highlight("@markup.link.label", { fg = "NONE", bg = "NONE" })
   highlight("@markup.link.url", { fg = colors.markup.href, bg = "NONE", underline = true, sp = colors.markup.link })
   highlight("@markup.raw", { fg = colors.markup.code, bg = "NONE" })
   highlight("@markup.strikethrough", { fg = "NONE", bg = "NONE", strikethrough = true })
   highlight("@markup.strong", { fg = "NONE", bg = "NONE", bold = true })
   highlight("@markup.underline", { fg = "NONE", bg = "NONE", underline = true })
+
+  -- Treesitter for Markdown
+  highlight("@markup.link.label.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
+  highlight("@markup.link.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
+
+  -- Treesitter for TSX
+  highlight("@lsp.typemod.variable.readonly.typescriptreact", { link = "@variable" })
 
   -- LSP semantic tokens
   highlight("@lsp.type.comment.c", { fg = colors.syntax.comment, bg = "NONE" })
