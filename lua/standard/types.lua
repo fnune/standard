@@ -47,13 +47,14 @@
 ---@field yellow string
 
 ---@class LowContrastColors
----@field dark_red string
----@field darker_red string
 ---@field dark_green string
----@field darker_green string
+---@field dark_red string
 ---@field dark_yellow string
----@field darker_yellow string
+---@field darker_green string
 ---@field darker_grey string
+---@field darker_red string
+---@field darker_yellow string
+---@field darkest_grey string
 
 ---@class InterfaceColors
 ---@field border string

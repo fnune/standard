@@ -29,13 +29,14 @@ local accessible = {
 
 ---@type LowContrastColors
 local lowcontrast = {
-  dark_red = "#6a3532",
-  darker_red = "#452f2f",
   dark_green = "#145034",
-  darker_green = "#1f4531",
+  dark_red = "#6a3532",
   dark_yellow = "#6a5a2a",
-  darker_yellow = "#4a4426",
+  darker_green = "#1f4531",
   darker_grey = "#2a2c2e",
+  darker_red = "#452f2f",
+  darker_yellow = "#4a4426",
+  darkest_grey = "#1d1f1f",
 }
 
 M.tokens = vim.tbl_deep_extend("force", lowcontrast, accessible)
@@ -49,7 +50,7 @@ M.colors = {
       border = lowcontrast.darker_grey,
       border_highlight = accessible.dark_grey,
       current = lowcontrast.dark_yellow,
-      cursorline = lowcontrast.darker_grey,
+      cursorline = lowcontrast.darkest_grey,
       match = accessible.light_blue,
       search = lowcontrast.darker_yellow,
       selection = lowcontrast.darker_yellow,
