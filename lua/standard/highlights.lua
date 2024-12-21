@@ -9,7 +9,7 @@ M.set = function(colors, _opts)
   highlight("Character", { fg = colors.syntax.string, bg = "NONE" })
   highlight("ColorColumn", { fg = "NONE", bg = colors.interface.cursorline })
   highlight("Comment", { fg = colors.syntax.comment, bg = "NONE", italic = true })
-  highlight("Conceal", { fg = colors.foreground, bg = colors.background })
+  highlight("Conceal", { fg = "NONE", bg = "NONE" })
   highlight("Conditional", { fg = colors.syntax.keyword, bg = "NONE" })
   highlight("Constant", { fg = colors.syntax.constant, bg = "NONE" })
   highlight("CurSearch", { fg = "NONE", bg = colors.interface.current })
@@ -103,6 +103,7 @@ M.set = function(colors, _opts)
   highlight("@boolean", { fg = colors.syntax.boolean, bg = "NONE" })
   highlight("@character", { fg = colors.syntax.string, bg = "NONE" })
   highlight("@comment", { fg = colors.syntax.comment, bg = "NONE" })
+  highlight("@conceal", { link = "Conceal" })
   highlight("@constant", { fg = colors.syntax.constant, bg = "NONE" })
   highlight("@constant.builtin", { fg = colors.syntax.builtin, bg = "NONE" })
   highlight("@constructor", { link = "Type" })
@@ -151,6 +152,10 @@ M.set = function(colors, _opts)
 
   -- Treesitter for TSX
   highlight("@lsp.typemod.variable.readonly.typescriptreact", { link = "@variable" })
+
+  -- Treesitter for JSON
+  highlight("@property.json", { fg = colors.syntax.key, bg = "NONE" })
+  highlight("@property.jsonc", { fg = colors.syntax.key, bg = "NONE" })
 
   -- LSP semantic tokens
   highlight("@lsp.type.enumMember", { link = "@constant" })
