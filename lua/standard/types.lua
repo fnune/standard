@@ -96,6 +96,7 @@
 ---@field number string
 ---@field operator string
 ---@field punctuation string
+---@field regexp string
 ---@field string string
 ---@field tag string
 ---@field type string
