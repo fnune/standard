@@ -237,6 +237,14 @@ M.set = function(colors, _opts)
   highlight("GitSignsDelete", { fg = colors.diff.delete_highlight.fg, bg = "NONE" })
   highlight("GitSignsDeleteLn", { fg = colors.background, bg = colors.diff.delete_highlight.bg })
 
+  -- Diffview
+  highlight("DiffviewFolderSign", { fg = colors.intent.info, bg = "NONE" })
+
+  -- Diffview compatibility
+  highlight("diffAdded", { fg = colors.diff.add.fg, bg = "NONE" })
+  highlight("diffChanged", { fg = colors.diff.modify.fg, bg = "NONE" })
+  highlight("diffRemoved", { fg = colors.diff.delete.fg, bg = "NONE" })
+
   -- Neotest
   highlight("NeotestAdapterName", { fg = colors.foreground, bold = true })
   highlight("NeotestDir", { fg = colors.intent.info })
