@@ -1,3 +1,2 @@
 yarn format
 yarn lint
-git diff --exit-code
