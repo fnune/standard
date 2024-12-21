@@ -150,6 +150,22 @@ M.set = function(colors, _opts)
   highlight("@markup.link.label.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
   highlight("@markup.link.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
 
+  -- Neorg
+  highlight("@neorg.headings.1.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.1.title", { link = "@markup.heading" })
+  highlight("@neorg.headings.2.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.2.title", { link = "@markup.heading" })
+  highlight("@neorg.headings.3.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.3.title", { link = "@markup.heading" })
+  highlight("@neorg.headings.4.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.4.title", { link = "@markup.heading" })
+  highlight("@neorg.headings.5.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.5.title", { link = "@markup.heading" })
+  highlight("@neorg.headings.6.prefix", { link = "@markup.heading" })
+  highlight("@neorg.headings.6.title", { link = "@markup.heading" })
+  highlight("@neorg.links.description.norg", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
+  highlight("@neorg.markup.verbatim", { link = "@markup.raw" })
+
   -- Treesitter for TSX
   highlight("@lsp.typemod.variable.readonly.typescriptreact", { link = "@variable" })
 
