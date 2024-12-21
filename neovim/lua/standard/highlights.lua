@@ -202,6 +202,7 @@ M.set = function(colors, _opts)
   highlight("NeogitHunkHeader", colors.diff.modify)
   highlight("NeogitHunkHeaderCursor", { link = "NeogitHunkHeaderHighlight" })
   highlight("NeogitHunkHeaderHighlight", colors.diff.modify_highlight)
+  highlight("NeogitRemote", { fg = colors.markup.link })
   highlight("NeogitWinSeparator", { link = "WinSeparator" })
 
   -- Neotest
