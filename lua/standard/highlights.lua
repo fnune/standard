@@ -173,7 +173,11 @@ M.set = function(colors, _opts)
   highlight("@neorg.links.description.norg", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
   highlight("@neorg.markup.verbatim", { link = "@markup.raw" })
 
-  -- Treesitter for TSX
+  -- Treesitter for TS, TSX
+  highlight("@keyword.conditional.ternary.typescript", { fg = colors.syntax.keyword, bg = "NONE", italic = false })
+  highlight("@lsp.typemod.property.readonly.typescript", { link = "@variable" })
+  highlight("@lsp.typemod.property.readonly.typescriptreact", { link = "@variable" })
+  highlight("@lsp.typemod.variable.readonly.typescript", { link = "@variable" })
   highlight("@lsp.typemod.variable.readonly.typescriptreact", { link = "@variable" })
 
   -- Treesitter for JSON
