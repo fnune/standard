@@ -1,9 +1,13 @@
 local M = {}
 
+---@param group string The highlight group name
+---@param opts HighlightOptions The highlight options
 local highlight = function(group, opts)
   vim.api.nvim_set_hl(0, group, opts)
 end
 
+---@param colors ThemeColors The color palette
+---@param _opts? Options Set-up options
 M.set = function(colors, _opts)
   highlight("Boolean", { fg = colors.syntax.boolean, bg = "NONE" })
   highlight("Character", { fg = colors.syntax.string, bg = "NONE" })
@@ -16,7 +20,7 @@ M.set = function(colors, _opts)
   highlight("Cursor", { fg = colors.background, bg = colors.foreground })
   highlight("CursorColumn", { fg = "NONE", bg = colors.interface.cursorline })
   highlight("CursorLine", { bg = colors.interface.cursorline })
-  highlight("CursorLineNr", { fg = colors.syntax.info, bg = colors.background })
+  highlight("CursorLineNr", { fg = colors.foreground, bg = "NONE" })
   highlight("Debug", { fg = colors.foreground, bg = "NONE" })
   highlight("Define", { fg = colors.syntax.keyword, bg = "NONE" })
   highlight("Delimiter", { fg = colors.foreground, bg = "NONE" })
@@ -24,7 +28,7 @@ M.set = function(colors, _opts)
   highlight("DiffChange", { fg = "NONE", bg = colors.diff.modify.bg })
   highlight("DiffDelete", { fg = "NONE", bg = colors.diff.delete.bg })
   highlight("DiffText", { fg = "NONE", bg = colors.diff.modify_highlight.bg })
-  highlight("Directory", { fg = colors.syntax.info, bg = "NONE" })
+  highlight("Directory", { fg = colors.intent.info, bg = "NONE" })
   highlight("EndOfBuffer", { fg = colors.background, bg = "NONE" })
   highlight("Error", { fg = colors.intent.error, bg = colors.background, undercurl = true, sp = colors.intent.error })
   highlight("ErrorMsg", { fg = colors.intent.error, bg = colors.background })
@@ -53,14 +57,14 @@ M.set = function(colors, _opts)
   highlight("PmenuSel", { link = "CursorLine" })
   highlight("PmenuThumb", { fg = colors.interface.border_highlight, bg = colors.interface.border_highlight })
   highlight("PreProc", { fg = colors.syntax.keyword, bg = "NONE" })
-  highlight("Question", { fg = colors.syntax.info, bg = colors.background })
+  highlight("Question", { fg = colors.intent.info, bg = colors.background })
   highlight("Repeat", { fg = colors.syntax.keyword, bg = "NONE" })
   highlight("Search", { fg = "NONE", bg = colors.interface.search })
   highlight("SignColumn", { fg = "NONE", bg = colors.background })
   highlight("Special", { fg = colors.syntax.builtin, bg = "NONE" })
   highlight("SpecialChar", { fg = colors.foreground, bg = "NONE" })
   highlight("SpecialComment", { fg = colors.syntax.comment, bg = "NONE" })
-  highlight("SpecialKey", { fg = colors.syntax.info, bg = "NONE" })
+  highlight("SpecialKey", { fg = colors.intent.info, bg = "NONE" })
   highlight("Statement", { fg = colors.syntax.keyword, bg = "NONE" })
   highlight("StatusLine", { fg = colors.foreground, bg = colors.interface.border })
   highlight("StatusLineNC", { fg = colors.foreground, bg = colors.interface.border })
@@ -238,7 +242,8 @@ M.set = function(colors, _opts)
   highlight("GitSignsDeleteLn", { fg = colors.background, bg = colors.diff.delete_highlight.bg })
 
   -- Diffview
-  highlight("DiffviewFolderSign", { fg = colors.intent.info, bg = "NONE" })
+  highlight("DiffviewFolderName", { fg = colors.foreground, bg = "NONE" })
+  highlight("DiffviewFolderSign", { link = "Directory" })
 
   -- Diffview compatibility
   highlight("diffAdded", { fg = colors.diff.add.fg, bg = "NONE" })
@@ -320,7 +325,7 @@ M.set = function(colors, _opts)
   highlight("NvimTreeCursorLine", { link = "CursorLine" })
   highlight("NvimTreeEmptyFolderName", { fg = colors.intent.disabled, bg = "NONE" })
   highlight("NvimTreeEndOfBuffer", { link = "EndOfBuffer" })
-  highlight("NvimTreeFolderIcon", { fg = colors.intent.info, bg = "NONE" })
+  highlight("NvimTreeFolderIcon", { link = "Directory" })
   highlight("NvimTreeFolderName", { fg = colors.foreground, bg = "NONE" })
   highlight("NvimTreeGitDeleted", { fg = colors.diff.delete.fg, bg = "NONE" })
   highlight("NvimTreeGitDirty", { fg = colors.diff.modify.fg, bg = "NONE" })
@@ -338,7 +343,7 @@ M.set = function(colors, _opts)
   highlight("NvimTreeVertSplit", { link = "VertSplit" })
 
   -- Dropbar
-  highlight("DropBarIconKindFolder", { link = "NvimTreeFolderIcon" })
+  highlight("DropBarIconKindFolder", { link = "Directory" })
 
   -- Aerial
   highlight("AerialArrayIcon", { link = "@constant" })

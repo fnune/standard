@@ -1,5 +1,7 @@
-local M = {}
+---@type ColorScheme
+local M = { tokens = {}, colors = {} }
 
+---@type Colors
 local accessible = {
   black = "#0b0c0c",
   blue = "#1d70b8",
@@ -25,6 +27,7 @@ local accessible = {
   yellow = "#ffdd00",
 }
 
+---@type LowContrastColors
 local lowcontrast = {
   dark_red = "#6a3532",
   darker_red = "#452f2f",
@@ -37,6 +40,7 @@ local lowcontrast = {
 
 M.tokens = vim.tbl_deep_extend("force", lowcontrast, accessible)
 
+---@type { dark: ThemeColors, light: ThemeColors }
 M.colors = {
   dark = {
     background = accessible.black,
