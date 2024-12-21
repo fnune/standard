@@ -210,6 +210,17 @@ M.set = function(colors, _opts)
   highlight("NeogitRemote", { fg = colors.markup.link })
   highlight("NeogitWinSeparator", { link = "WinSeparator" })
 
+  -- Git gutter, Git signs
+  highlight("GitGutterAdd", { fg = colors.diff.add_highlight.fg, bg = "NONE" })
+  highlight("GitGutterChange", { fg = colors.diff.modify_highlight.fg, bg = "NONE" })
+  highlight("GitGutterDelete", { fg = colors.diff.delete_highlight.fg, bg = "NONE" })
+  highlight("GitSignsAdd", { fg = colors.diff.add_highlight.fg, bg = "NONE" })
+  highlight("GitSignsAddLn", { fg = colors.background, bg = colors.diff.add_highlight.bg })
+  highlight("GitSignsChange", { fg = colors.diff.modify_highlight.fg, bg = "NONE" })
+  highlight("GitSignsChangeLn", { fg = colors.background, bg = colors.diff.modify_highlight.bg })
+  highlight("GitSignsDelete", { fg = colors.diff.delete_highlight.fg, bg = "NONE" })
+  highlight("GitSignsDeleteLn", { fg = colors.background, bg = colors.diff.delete_highlight.bg })
+
   -- Neotest
   highlight("NeotestAdapterName", { fg = colors.foreground, bold = true })
   highlight("NeotestDir", { fg = colors.intent.info })
