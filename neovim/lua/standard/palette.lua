@@ -84,6 +84,12 @@ M.colors = {
       type = accessible.turquoise,
       variable = accessible.light_grey,
     },
+    markup = {
+      code = accessible.light_green,
+      heading = accessible.light_purple,
+      href = accessible.blue,
+      link = accessible.light_blue,
+    },
   },
   light = {},
 }
