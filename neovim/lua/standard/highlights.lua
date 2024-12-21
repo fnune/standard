@@ -269,6 +269,7 @@ M.set = function(colors, _opts)
   highlight("TelescopePromptPrefix", { link = "Normal" })
   highlight("TelescopeResultsBorder", { link = "WinSeparator" })
   highlight("TelescopeSelection", { link = "CursorLine" })
+  highlight("TelescopeTitle", { fg = colors.foreground, bold = true })
 
   -- Illuminate
   highlight("IlluminatedWordRead", { link = "Visual" })
