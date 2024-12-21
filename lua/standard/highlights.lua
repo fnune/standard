@@ -154,6 +154,9 @@ M.set = function(colors, _opts)
   highlight("@markup.link.label.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
   highlight("@markup.link.markdown_inline", { fg = colors.markup.link, bg = "NONE", underline = true, sp = colors.markup.link })
 
+  -- Treesitter for Git
+  highlight("@markup.heading.gitcommit", { fg = colors.foreground, bg = "NONE", bold = true })
+
   -- Neorg
   highlight("@neorg.headings.1.prefix", { link = "@markup.heading" })
   highlight("@neorg.headings.1.title", { link = "@markup.heading" })
