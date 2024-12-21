@@ -331,6 +331,34 @@ M.set = function(colors, _opts)
 
   -- Dropbar
   highlight("DropBarIconKindFolder", { link = "NvimTreeFolderIcon" })
+
+  -- Aerial
+  highlight("AerialArrayIcon", { link = "@constant" })
+  highlight("AerialBooleanIcon", { link = "@boolean" })
+  highlight("AerialClassIcon", { link = "@type" })
+  highlight("AerialConstantIcon", { link = "@constant" })
+  highlight("AerialConstructorIcon", { link = "@constructor" })
+  highlight("AerialEnumIcon", { link = "@type" })
+  highlight("AerialEnumMemberIcon", { link = "@field" })
+  highlight("AerialEventIcon", { link = "@type" })
+  highlight("AerialFieldIcon", { link = "@field" })
+  highlight("AerialFileIcon", { link = "@text.uri" })
+  highlight("AerialFunctionIcon", { link = "@function" })
+  highlight("AerialInterfaceIcon", { link = "@type" })
+  highlight("AerialKeyIcon", { link = "@type" })
+  highlight("AerialMethodIcon", { link = "@method" })
+  highlight("AerialModuleIcon", { link = "@namespace" })
+  highlight("AerialNamespaceIcon", { link = "@namespace" })
+  highlight("AerialNullIcon", { link = "@type" })
+  highlight("AerialNumberIcon", { link = "@number" })
+  highlight("AerialObjectIcon", { link = "@type" })
+  highlight("AerialOperatorIcon", { link = "@operator" })
+  highlight("AerialPackageIcon", { link = "@namespace" })
+  highlight("AerialPropertyIcon", { link = "@property" })
+  highlight("AerialStringIcon", { link = "@string" })
+  highlight("AerialStructIcon", { link = "@type" })
+  highlight("AerialTypeParameterIcon", { link = "@type" })
+  highlight("AerialVariableIcon", { link = "@constant" })
 end
 
 return M
