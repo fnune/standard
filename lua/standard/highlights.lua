@@ -245,6 +245,7 @@ M.set = function(colors, _opts)
   highlight("GitSignsDeleteLn", { fg = colors.background, bg = colors.diff.delete_highlight.bg })
 
   -- Diffview
+  highlight("DiffviewFilePanelSelected", { fg = "NONE", bg = "NONE", bold = true })
   highlight("DiffviewFolderName", { fg = colors.foreground, bg = "NONE" })
   highlight("DiffviewFolderSign", { link = "Directory" })
 
