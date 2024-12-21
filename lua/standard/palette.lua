@@ -21,7 +21,7 @@ local accessible = {
   purple = "#4c2c92",
   red = "#d4351c",
   turquoise = "#28a197",
-  white = "#ffffff",
+  white = "#ced2d4",
   yellow = "#ffdd00",
 }
 
@@ -93,7 +93,7 @@ M.colors = {
     },
   },
   light = {
-    background = accessible.mid_grey,
+    background = accessible.white,
     foreground = accessible.black,
     interface = {
       border = accessible.light_grey,
