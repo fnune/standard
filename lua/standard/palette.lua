@@ -29,10 +29,10 @@ local accessible = {
 
 ---@type LowContrastColors
 local lowcontrast = {
-  dark_green = "#145034",
+  dark_green = "#293f1a",
   dark_red = "#6a3532",
   dark_yellow = "#6a5a2a",
-  darker_green = "#1f4531",
+  darker_green = "#1d2d13",
   darker_grey = "#2a2c2e",
   darker_red = "#452f2f",
   darker_yellow = "#4a4426",
