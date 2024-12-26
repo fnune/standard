@@ -98,6 +98,7 @@
 ---@field path string
 ---@field punctuation string
 ---@field regexp string
+---@field ret string
 ---@field string string
 ---@field tag string
 ---@field type string
