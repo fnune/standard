@@ -95,6 +95,7 @@
 ---@field keyword string
 ---@field number string
 ---@field operator string
+---@field path string
 ---@field punctuation string
 ---@field regexp string
 ---@field string string
