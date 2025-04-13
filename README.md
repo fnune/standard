@@ -3,7 +3,20 @@
 An accessible color scheme inspired by [GOV.UK colors][govuk]. Built to be
 clear, consistent, and something you can stick with long-term.
 
-Principles:
+## Table of Contents
+
+- [Principles](#principles)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+  - [Neovim](#neovim)
+    - [Lualine](#lualine)
+    - [Other plugins](#other-plugins)
+  - [Kitty](#kitty)
+  - [Tmux](#tmux)
+  - [FZF](#fzf)
+  - [Bat](#bat)
+
+## Principles
 
 - Text and information should use very accessible colors
 - Interface elements can blend more into the background, and this should aid in
