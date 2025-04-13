@@ -11,6 +11,20 @@ Principles:
 
 [govuk]: https://design-system.service.gov.uk/styles/colour/
 
+## Screenshots
+
+![standard in TypeScript](./screenshots/typescript.png)
+_TypeScript code inside Neovim using Treesitter highlighting._
+
+![Debugging a Python test](./screenshots/dap.png)
+_Debugging a Python test using Neotest._
+
+![Error handling uses special colors.](./screenshots/try-catch.png)
+_Error handling built-ins use special colors._
+
+![Terminal support](./screenshots/terminal.png)
+_Showcasing Kitty, `tmux`, FZF, and `bat` support._
+
 ## Installation
 
 ### Neovim
