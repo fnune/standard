@@ -1,5 +1,7 @@
 # `standard` colors
 
+![Palette following GOV.UK](./assets/palette.png)
+
 An accessible color scheme inspired by [GOV.UK colors][govuk]. Built to be
 clear, consistent, and something you can stick with long-term.
 
@@ -30,17 +32,19 @@ clear, consistent, and something you can stick with long-term.
 
 ## Screenshots
 
-![standard in TypeScript](./screenshots/typescript.png)
+![standard in TypeScript](./assets/typescript.png)
 _TypeScript code inside Neovim using Treesitter highlighting._
 
-![Debugging a Python test](./screenshots/dap.png)
+![Debugging a Python test](./assets/dap.png)
 _Debugging a Python test using Neotest._
 
-![Error handling uses special colors.](./screenshots/try-catch.png)
+![Error handling uses special colors.](./assets/try-catch.png)
 _Error handling built-ins use special colors._
 
-![Terminal support](./screenshots/terminal.png)
+![Terminal support](./assets/terminal.png)
 _Showcasing Kitty, `tmux`, FZF, and `bat` support._
+
+The font in these screenshots is [Berkeley Mono](https://usgraphics.com/products/berkeley-mono).
 
 ## Installation
 
