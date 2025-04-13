@@ -392,6 +392,18 @@ M.set = function(colors, _opts)
   highlight("AerialStructIcon", { link = "@type" })
   highlight("AerialTypeParameterIcon", { link = "@type" })
   highlight("AerialVariableIcon", { link = "@constant" })
+
+  -- petertriho/nvim-scrollbar
+  highlight("ScrollbarHandle", { link = "PmenuSbar" })
+
+  --- saghen/blink.cmp
+  highlight("BlinkCmpMenuBorder", { link = "FloatBorder" })
+  highlight("BlinkCmpDocBorder", { link = "FloatBorder" })
+  highlight("BlinkCmpSignatureHelpBorder", { link = "FloatBorder" })
+  highlight("BlinkCmpGhostText", { link = "Conceal" })
+
+  --- folke/snacks.nvim
+  highlight("SnacksInputBorder", { link = "FloatBorder" })
 end
 
 return M
