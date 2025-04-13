@@ -145,6 +145,7 @@ M.set = function(colors, _opts)
   highlight("@type.builtin", { fg = colors.syntax.builtin, bg = "NONE" })
   highlight("@type.qualifier", { fg = colors.syntax.tag, bg = "NONE" })
   highlight("@variable", { link = "Identifier" })
+  highlight("@variable.builtin", { link = "Special" })
   highlight("@variable.member", { fg = colors.syntax.property, bg = "NONE" })
 
   -- Treesitter for markup
