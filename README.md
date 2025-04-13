@@ -55,6 +55,30 @@ require('lualine').setup {
 }
 ```
 
+#### Other plugins
+
+The following plugins are supported with custom highlight groups:
+
+- Treesitter
+- Neorg
+- Git (GitGutter, GitSigns)
+- Neogit
+- Diffview
+- Neotest
+- `nvim-dap-ui`
+- Telescope
+- Illuminate
+- NvimTree
+- Dropbar
+- Aerial
+- `nvim-scrollbar`
+- `blink.cmp`
+- `snacks.nvim`
+
+Support for other plugins may be added in the future. All plugin support is
+enabled by default. See [`highlights.lua`](./lua/standard/highlights.lua) for
+specifics.
+
 ### Kitty
 
 Add to your kitty.conf:
