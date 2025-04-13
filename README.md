@@ -11,6 +11,9 @@ Principles:
 
 [govuk]: https://design-system.service.gov.uk/styles/colour/
 
+> ℹ️ `vim.o.background = "light"` is supported only experimentally. I do not
+> use it and I currently treat it as a second-class citizen.
+
 ## Screenshots
 
 ![standard in TypeScript](./screenshots/typescript.png)
