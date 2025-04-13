@@ -15,6 +15,7 @@ clear, consistent, and something you can stick with long-term.
   - [Tmux](#tmux)
   - [FZF](#fzf)
   - [Bat](#bat)
+- [Contributing](#contributing)
 
 ## Principles
 
@@ -123,3 +124,62 @@ Works well with the base16 theme in Bat:
 ```bash
 export BAT_THEME="base16"
 ```
+
+## Contributing
+
+You can contribute to `standard` in multiple ways:
+
+### Development Environment Setup
+
+#### Using Nix (recommended)
+
+This project includes a Nix flake for development. If you have Nix with flakes enabled:
+
+1. Copy the `.envrc.sample` file to `.envrc` (or run `echo "use flake" > .envrc` if you use direnv)
+2. If you use direnv, run `direnv allow` to automatically set up your environment
+3. Otherwise, run `nix develop` to enter the development shell
+
+The Nix environment provides all needed tools:
+
+- `biome`
+- `lua-language-server`
+- `luacheck`
+- `nodejs`
+- `stylua`
+- `yarn`
+
+#### Without Nix
+
+If you're not using Nix, you'll need to install these tools manually:
+
+- Node.js and Yarn for JavaScript tooling
+- LuaCheck and Stylua for Lua formatting and linting
+- Lua Language Server for Lua language support
+
+After installing the dependencies, you can run:
+
+```bash
+yarn install
+yarn format
+yarn lint
+```
+
+### Understanding the Codebase
+
+The colorscheme is organized around two main concepts:
+
+1. **Tokens** - The raw color values in `palette.lua`
+   - These are stored in the `accessible` and `lowcontrast` tables
+   - These define the base colors that match the GOV.UK design system
+2. **Decisions** - How colors are applied in `M.colors`
+   - The `M.colors` table maps tokens to specific UI elements and syntax
+   - This is where the actual colorscheme design happens
+   - Organized by categories like `interface`, `intent`, `diff`, `syntax`, etc.
+
+When contributing, consider whether you're:
+
+- Adding a new token (rare, unless extending the base palette)
+- Changing a decision about how an existing token is applied
+- Adding support for a new plugin or UI element
+
+Please include screenshots of your changes when applicable.
