@@ -129,6 +129,17 @@ Works well with the base16 theme in Bat:
 export BAT_THEME="base16"
 ```
 
+### Ghostty
+
+Copy `ghostty/standard` to your `$XDG_CONFIG_HOME/ghostty/themes` or `$PREFIX/share/ghostty/themes` directory.
+
+Then, set the theme in your `ghostty.conf`:
+
+```
+theme = "standard"
+```
+
+
 ## Contributing
 
 You can contribute to `standard` in multiple ways:
