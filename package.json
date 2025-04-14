@@ -1,6 +1,6 @@
 {
   "name": "standard",
-  "description": "An accessible color scheme inspired by GOV.UK colors. Built to be clear, consistent, and something you can stick with long-term.",
+  "description": "A color scheme inspired by GOV.UK colors. Built to be clear, consistent, and something you can stick with long-term.",
   "author": "Fausto Núñez Alberro <fausto.nunez@mailbox.org>",
   "license": "MIT",
   "homepage": "https://github.com/fnune/standard",

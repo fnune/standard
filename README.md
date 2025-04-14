@@ -2,7 +2,7 @@
 
 ![Palette following GOV.UK](./assets/palette.png)
 
-An accessible color scheme inspired by [GOV.UK colors][govuk]. Built to be
+A color scheme inspired by [GOV.UK colors][govuk]. Built to be
 clear, consistent, and something you can stick with long-term.
 
 ## Table of Contents
@@ -21,7 +21,7 @@ clear, consistent, and something you can stick with long-term.
 
 ## Principles
 
-- Text and information should use very accessible colors
+- Text and information should use colors that are easy to read
 - Interface elements can blend more into the background, and this should aid in
   making the content stand out
 
@@ -173,8 +173,9 @@ yarn lint
 The colorscheme is organized around two main concepts:
 
 1. **Tokens** - The raw color values in `palette.lua`
-   - These are stored in the `accessible` and `lowcontrast` tables
-   - These define the base colors that match the GOV.UK design system
+   - These are stored in the `govuk` and `lowcontrast` tables
+   - These define the base colors that match the GOV.UK design system, and
+     other derived colors
 2. **Decisions** - How colors are applied in `M.colors`
    - The `M.colors` table maps tokens to specific UI elements and syntax
    - This is where the actual colorscheme design happens
