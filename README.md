@@ -139,6 +139,16 @@ Then, set the theme in your `ghostty.conf`:
 theme = "standard"
 ```
 
+### `LS_COLORS`
+
+There is an `LS_COLORS` (colors `ls` output and others) generated using
+[vivid](https://github.com/sharkdp/vivid) in
+[`./vivid/standard.zsh`](./vivid/standard.zsh). You can source the
+contents of that file directly or use `vivid` on your own with the
+provided [`./vivid/standard.yml`](./vivid/standard.yml) configuration.
+
+To test development changes of this setup, use the provided
+[`./vivid/test.zsh`](./vivid/test.zsh) script.
 
 ## Contributing
 

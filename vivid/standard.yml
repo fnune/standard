@@ -1,0 +1,169 @@
+# Standard Vivid Theme
+colors:
+  # Standard core colors
+  black: "0b0c0c"
+  dark_grey: "505a5f"
+  mid_grey: "b1b4b6"
+  light_grey: "f3f2f1"
+  white: "ffffff"
+
+  # Intent colors
+  red: "d4351c"
+  light_red: "e28f84"
+  orange: "f47738"
+  yellow: "ffdd00"
+  light_yellow: "fff4c2"
+  green: "00703c"
+  light_green: "85994b"
+  blue: "1d70b8"
+  light_blue: "5694ca"
+  dark_blue: "003078"
+  purple: "4c2c92"
+  light_purple: "6f72af"
+  pink: "d53880"
+  bright_purple: "912b88"
+  turquoise: "28a197"
+  brown: "b58840"
+
+  # Low contrast colors for backgrounds
+  darkest_grey: "1d1f1f"
+  darker_grey: "2a2c2e"
+  darker_green: "1d2d13"
+  dark_green: "293f1a"
+  darker_red: "452f2f"
+  dark_red: "6a3532"
+  darker_yellow: "4a4426"
+  dark_yellow: "6a5a2a"
+
+core:
+  normal_text:
+    foreground: light_grey
+
+  regular_file:
+    foreground: light_grey
+
+  reset_to_normal:
+    foreground: light_grey
+
+  directory:
+    foreground: light_blue
+    font-style: bold
+
+  symlink:
+    foreground: turquoise
+
+  multi_hard_link: {}
+
+  fifo:
+    foreground: yellow
+    background: darkest_grey
+
+  socket:
+    foreground: pink
+    background: darkest_grey
+    font-style: bold
+
+  door:
+    foreground: pink
+    background: darkest_grey
+    font-style: bold
+
+  block_device:
+    foreground: yellow
+    background: darkest_grey
+    font-style: bold
+
+  character_device:
+    foreground: yellow
+    background: darkest_grey
+    font-style: bold
+
+  broken_symlink:
+    foreground: red
+    background: darkest_grey
+    font-style: bold
+
+  missing_symlink_target:
+    foreground: red
+    background: darkest_grey
+
+  setuid:
+    foreground: white
+    background: red
+
+  setgid:
+    foreground: black
+    background: yellow
+
+  file_with_capability: {}
+
+  sticky_other_writable:
+    foreground: black
+    background: light_green
+
+  other_writable:
+    foreground: black
+    background: green
+
+  sticky:
+    foreground: white
+    background: purple
+
+  executable_file:
+    foreground: light_green
+
+text:
+  special:
+    foreground: blue
+
+  todo:
+    foreground: orange
+    font-style: bold
+
+  licenses:
+    foreground: bright_purple
+
+  configuration:
+    foreground: turquoise
+
+  other:
+    foreground: light_blue
+
+markup:
+  foreground: light_purple
+
+programming:
+  source:
+    foreground: light_blue
+  tooling:
+    foreground: turquoise
+
+media:
+  image:
+    foreground: pink
+
+  audio:
+    foreground: purple
+
+  video:
+    foreground: bright_purple
+    font-style: bold
+
+  fonts:
+    foreground: orange
+
+  3d:
+    foreground: light_blue
+
+office:
+  foreground: light_green
+
+archives:
+  foreground: red
+  font-style: bold
+
+executable:
+  foreground: light_green
+
+unimportant:
+  foreground: dark_grey
