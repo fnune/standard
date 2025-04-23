@@ -404,6 +404,14 @@ M.set = function(colors, _opts)
 
   --- folke/snacks.nvim
   highlight("SnacksInputBorder", { link = "FloatBorder" })
+
+  --- yetone/avante.nvim
+  highlight("AvanteSidebarWinHorizontalSeparator", { fg = colors.background, bg = colors.background })
+  highlight("AvanteConflictCurrent", { link = "DiffDelete" })
+  highlight("AvanteConflictCurrentLabel", { fg = colors.diff.delete_highlight.fg, bg = "NONE", bold = true })
+  highlight("AvanteConflictIncoming", { link = "DiffAdd" })
+  highlight("AvanteConflictIncomingLabel", { fg = colors.diff.add_highlight.fg, bg = "NONE", bold = true })
+  highlight("AvanteSidebarWinSeparator", { link = "WinSeparator" })
 end
 
 return M
