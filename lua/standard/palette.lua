@@ -35,7 +35,7 @@ local lowcontrast = {
   darker_green = "#1d2d13",
   darker_grey = "#2a2c2e",
   darker_red = "#452f2f",
-  darker_yellow = "#4a4426",
+  darker_yellow = "#35311b",
   darkest_grey = "#1d1f1f",
 }
 
