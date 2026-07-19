@@ -1,0 +1,20 @@
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+accent = "#5694ca"
+panel_bg = "#1d1f1f"
+surface0 = "#2a2c2e"
+surface1 = "#505a5f"
+surface_dim = "#1d1f1f"
+overlay0 = "#767c7f"
+overlay1 = "#b1b4b6"
+text = "#f3f2f1"
+subtext0 = "#b1b4b6"
+mauve = "#6f72af"
+green = "#85994b"
+yellow = "#ffdd00"
+red = "#d4351c"
+blue = "#5694ca"
+teal = "#28a197"
+peach = "#f47738"
