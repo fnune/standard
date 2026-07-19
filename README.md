@@ -17,6 +17,8 @@ clear, consistent, and something you can stick with long-term.
   - [Tmux](#tmux)
   - [FZF](#fzf)
   - [Bat](#bat)
+  - [Jujutsu](#jujutsu)
+  - [jjui](#jjui)
 - [Contributing](#contributing)
 
 ## Principles
@@ -128,6 +130,22 @@ Works well with the base16 theme in Bat:
 ```bash
 export BAT_THEME="base16"
 ```
+
+### Jujutsu
+
+Copy `jj/standard.dark.toml` into `$XDG_CONFIG_HOME/jj/conf.d/`. Files there
+layer on top of your `config.toml`.
+
+### jjui
+
+Copy `jjui/standard.dark.toml` into `$XDG_CONFIG_HOME/jjui/themes/`, then:
+
+```toml
+[ui]
+theme = "standard.dark"
+```
+
+Pair it with the Jujutsu colors above, which color the revision list.
 
 ### Ghostty
 

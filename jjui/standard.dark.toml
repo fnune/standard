@@ -1,0 +1,67 @@
+text = { fg = "#f3f2f1" }
+dimmed = { fg = "#b1b4b6" }
+border = { fg = "#505a5f" }
+title = { fg = "#5694ca", bold = true }
+shortcut = { fg = "#f499be" }
+matched = { fg = "#ffdd00", bold = true }
+selected = { bg = "#35311b" }
+success = { fg = "#85994b" }
+error = { fg = "#e28f84" }
+
+source_marker = { fg = "#ffffff", bg = "#00703c", bold = true }
+target_marker = { fg = "#ffffff", bg = "#d4351c", bold = true }
+
+"revisions selected" = { bg = "#35311b" }
+"revisions dimmed" = { fg = "#b1b4b6" }
+"revisions matched" = { fg = "#ffdd00", bold = true, reverse = false, underline = false }
+"revisions details selected" = { bg = "#35311b", bold = true }
+"revisions details selected dimmed" = { fg = "#b1b4b6" }
+
+"oplog selected" = { bg = "#35311b" }
+"oplog matched" = { fg = "#ffdd00", bold = true, reverse = false, underline = false }
+
+"evolog selected" = { bg = "#35311b" }
+
+"revset title" = { fg = "#5694ca", bold = true }
+"revset text" = { fg = "#f3f2f1" }
+"revset completion dimmed" = { fg = "#b1b4b6" }
+"revset completion matched" = { fg = "#ffdd00", bold = true }
+"revset completion selected" = { bg = "#35311b", bold = true }
+"revset completion selected dimmed" = { fg = "#b1b4b6" }
+"revset completion selected text" = { fg = "#f3f2f1" }
+"revset completion selected matched" = { fg = "#ffdd00", bold = true }
+
+"status title" = { fg = "#0b0c0c", bg = "#5694ca", bold = true }
+"status shortcut" = { fg = "#f499be" }
+"status dimmed" = { fg = "#b1b4b6" }
+
+"menu border" = { fg = "#505a5f" }
+"menu title" = { fg = "#5694ca", bold = true }
+"menu subtitle" = { fg = "#f3f2f1", bold = true }
+"menu dimmed" = { fg = "#b1b4b6" }
+"menu shortcut" = { fg = "#f499be" }
+"menu matched" = { fg = "#ffdd00", bold = true }
+"menu selected" = { bg = "#35311b", bold = true, underline = false }
+"menu selected shortcut" = { fg = "#f499be", bg = "#35311b" }
+
+"picker dimmed" = { fg = "#b1b4b6" }
+"picker matched" = { fg = "#ffdd00", bold = true, underline = false }
+"picker selected" = { bg = "#35311b", bold = true, underline = false }
+"picker selected dimmed" = { fg = "#b1b4b6" }
+"picker selected text" = { fg = "#f3f2f1" }
+"picker selected matched" = { fg = "#ffdd00", bold = true }
+
+"help title" = { fg = "#5694ca", bold = true }
+"help border" = { fg = "#505a5f" }
+
+"preview border" = { fg = "#505a5f" }
+
+"confirmation border" = { fg = "#505a5f" }
+"confirmation text" = { fg = "#f3f2f1", bold = true }
+"confirmation dimmed" = { fg = "#b1b4b6" }
+"confirmation selected" = { bg = "#35311b", bold = true }
+
+"undo confirmation selected" = { bg = "#35311b", bold = true }
+"undo confirmation dimmed" = { fg = "#b1b4b6" }
+
+"flash selected" = { fg = "#5694ca" }

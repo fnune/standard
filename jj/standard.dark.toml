@@ -1,0 +1,70 @@
+[colors]
+change_id = "#f499be"
+commit_id = "#5694ca"
+rest = "#b1b4b6"
+author = "#b1b4b6"
+committer = "#b1b4b6"
+timestamp = "#28a197"
+bookmark = "#6f72af"
+bookmarks = "#6f72af"
+local_bookmarks = "#6f72af"
+remote_bookmarks = "#6f72af"
+tag = "#6f72af"
+tags = "#6f72af"
+git_ref = "#6f72af"
+git_refs = "#6f72af"
+git_head = "#6f72af"
+working_copies = "#85994b"
+workspace_name = "#85994b"
+empty = "#f3f2f1"
+conflict = "#e28f84"
+divergent = "#e28f84"
+placeholder = "#e28f84"
+"description placeholder" = "#b1b4b6"
+"empty description placeholder" = "#f3f2f1"
+
+"node elided".fg = "#b1b4b6"
+"node immutable" = { fg = "#28a197", bold = true }
+"node working_copy" = { fg = "#85994b", bold = true }
+"node current_operation" = { fg = "#85994b", bold = true }
+"node conflicted" = { fg = "#e28f84", bold = true }
+
+"working_copy change_id" = "#f499be"
+"working_copy commit_id" = "#5694ca"
+"working_copy author" = "#b1b4b6"
+"working_copy committer" = "#b1b4b6"
+"working_copy timestamp" = "#28a197"
+"working_copy bookmark" = "#6f72af"
+"working_copy bookmarks" = "#6f72af"
+"working_copy local_bookmarks" = "#6f72af"
+"working_copy remote_bookmarks" = "#6f72af"
+"working_copy tag" = "#6f72af"
+"working_copy tags" = "#6f72af"
+"working_copy git_ref" = "#6f72af"
+"working_copy git_refs" = "#6f72af"
+"working_copy working_copies" = "#85994b"
+"working_copy empty" = "#f3f2f1"
+"working_copy conflict" = "#e28f84"
+"working_copy divergent" = "#e28f84"
+"working_copy placeholder" = "#e28f84"
+"working_copy description placeholder" = "#b1b4b6"
+"working_copy empty description placeholder" = "#f3f2f1"
+
+"diff token".underline = false
+"diff added" = { fg = "#85994b", bg = "#1d2d13" }
+"diff added token" = { bg = "#293f1a", underline = false }
+"diff added line_number" = { fg = "#85994b", bg = "default" }
+"diff removed" = { fg = "#e28f84", bg = "#452f2f" }
+"diff removed token" = { bg = "#6a3532", underline = false }
+"diff removed line_number" = { fg = "#e28f84", bg = "default" }
+"diff modified" = { fg = "#fff4c2", bg = "#35311b" }
+"diff modified token" = { bg = "#6a5a2a", underline = false }
+"diff header" = { fg = "#5694ca", bold = true }
+"diff file_header" = { fg = "#5694ca", bold = true }
+"diff hunk_header" = "#28a197"
+"diff empty" = "#28a197"
+"diff binary" = "#28a197"
+"diff renamed" = "#28a197"
+"diff copied" = "#85994b"
+"diff untracked" = "#f499be"
+"diff access-denied".bg = "#6a3532"
