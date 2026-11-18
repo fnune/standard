@@ -1,0 +1,2 @@
+description = "standard: Nix and Node, for the color scheme and its themes"
+modules = ["vcs-readwrite", "docs", "nix", "node"]
